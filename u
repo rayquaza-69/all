@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+paru -Syu --noconfirm
+paru -Sc --noconfirm
+yay -Yc --noconfirm
+
+sudo pacman -Rcns $(pacman -Qtdq) --noconfirm
+bleachbit
